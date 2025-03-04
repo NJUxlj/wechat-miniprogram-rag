@@ -10,3 +10,36 @@
 - RAG实现：LangChain（提供完整的RAG工具链）
 - 大模型API：月之暗面/智谱/通义，优先使用 qwen-plus
 - 前端：微信小程序开发者工具
+
+
+## Project Structure
+```Plain Text
+wechat-rag-tcm/  
+├── backend/                 # 后端服务  
+│   ├── fastapi_app/         # API服务  
+│   │   ├── main.py  
+│   │   ├── routers/  
+│   │   │   └── chat.py  
+│   │   └── config.py  
+│   ├── django_project/      # 管理后台  
+│   │   ├── manage.py  
+│   │   └── knowledge/  
+│   │       ├── models.py  
+│   │       └── admin.py  
+│   ├── rag_service/         # RAG核心  
+│   │   ├── chains/  
+│   │   │   └── tcm_chain.py  
+│   │   └── retriever.py  
+│   └── requirements.txt  
+├── frontend/                # 小程序前端  
+│   ├── app.json  
+│   ├── pages/  
+│   │   └── chat/  
+│   │       ├── index.js  
+│   │       └── index.wxml  
+└── infrastructure/          # 基础设施  
+    ├── milvus/  
+    └── mongo/  
+
+
+```
