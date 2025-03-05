@@ -32,3 +32,14 @@ D:\MyDjango>python manage.py runserver 8001
 
 - 目录结构多出了templates文件夹，该文件夹用于存放HTML模板文件
 - ![alt text](image/image1.png)
+
+
+
+- 首先在templates文件夹里新建index.html文件，该文件是Django的模板文件，如果MyDjango项目是在命令提示符窗口下创建的，就需要在MyDjango项目的路径下自行创建templates文件夹
+
+![alt text](image/image2.png)
+
+
+
+- 接着打开MyDjango文件夹的配置文件settings.py，找到配置属性INSTALLED_APPS和TEMPLATES，分别将项目应用index和模板文件夹templates添加到相应的配置属性
+![alt text](image/image3.png)
